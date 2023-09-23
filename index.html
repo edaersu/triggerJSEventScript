@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <input type="button" value="Trigger My Android App" onClick="triggerEvent('event')" />
+
+    <p id="errorMessage"></p>
+
+    <script type="text/javascript">
+
+        function triggerEvent(url) {
+            try {
+                YourInterface.triggerEvent(url);
+            } catch (error) {
+                document.getElementById("errorMessage").innerHTML = error;
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
